@@ -6,36 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Contact The Restaurant — find our address, phone, email and send us a message." />
   <title>Contact | The Restaurant</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
   <!-- ========== NAVBAR (same as index.html) ========== -->
-  <header class="site-header">
-    <nav class="navbar" aria-label="Main navigation">
-      <div class="container navbar__inner">
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">🍽️ The Restaurant</a>
 
-        <a href="index.html" class="navbar__logo">🍽️ The Restaurant</a>
-
-        <button class="navbar__toggle" id="navToggle"
-          aria-controls="navMenu" aria-expanded="false"
-          aria-label="Toggle navigation menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
-
-        <ul class="navbar__menu" id="navMenu">
-          <li><a href="index.html"   class="navbar__link">Home</a></li>
-          <li><a href="menu.html"    class="navbar__link">Menu</a></li>
-          <li><a href="contact.html" class="navbar__link">Contact</a></li>
-        </ul>
-
-      </div>
-    
-    </nav>
-  </header>
+      <ul class="navbar__menunu">
+        ><a href="index.html" class="navbar__link">Home</a></l/li>
+        ><a href="menu.html" class="navbar__link">Menu</a></l/li>
+        ><a href="contact.html" class="navbar__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
   <!-- ========== MAIN ========== -->
   <main>
@@ -150,16 +139,31 @@
               <div>
                 <h3 class="contact-block__title">Follow Us</h3>
                 <div class="contact-social">
-                  <a href="https://facebook.com"  class="contact-social__link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                  <a href="https://facebook.com" class="contact-social__link" target="_blank" rel="noopener noreferrer"
+                    aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
                     Facebook
                   </a>
-                  <a href="https://instagram.com" class="contact-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                  <a href="https://instagram.com" class="contact-social__link" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                      <circle cx="12" cy="12" r="4" />
+                      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                    </svg>
                     Instagram
                   </a>
-                  <a href="https://wa.me/911234567890" class="contact-social__link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535 5.856L.057 23.885a.5.5 0 0 0 .606.61l6.213-1.63A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 0 1-5.045-1.396l-.361-.214-3.735.979.998-3.648-.235-.374A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+                  <a href="https://wa.me/911234567890" class="contact-social__link" target="_blank"
+                    rel="noopener noreferrer" aria-label="WhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z" />
+                      <path
+                        d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535 5.856L.057 23.885a.5.5 0 0 0 .606.61l6.213-1.63A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 0 1-5.045-1.396l-.361-.214-3.735.979.998-3.648-.235-.374A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
+                    </svg>
                     WhatsApp
                   </a>
                 </div>
@@ -197,15 +201,8 @@
                     <label for="contactName">
                       Full Name <span aria-label="required">*</span>
                     </label>
-                    <input
-                      type="text"
-                      id="contactName"
-                      name="name"
-                      class="form-control"
-                      placeholder="Your full name"
-                      autocomplete="name"
-                      required
-                    />
+                    <input type="text" id="contactName" name="name" class="form-control" placeholder="Your full name"
+                      autocomplete="name" required />
                     <span class="form-error" id="nameError" role="alert"></span>
                   </div>
 
@@ -213,15 +210,8 @@
                     <label for="contactEmail">
                       Email Address <span aria-label="required">*</span>
                     </label>
-                    <input
-                      type="email"
-                      id="contactEmail"
-                      name="email"
-                      class="form-control"
-                      placeholder="you@example.com"
-                      autocomplete="email"
-                      required
-                    />
+                    <input type="email" id="contactEmail" name="email" class="form-control"
+                      placeholder="you@example.com" autocomplete="email" required />
                     <span class="form-error" id="emailError" role="alert"></span>
                   </div>
 
@@ -233,14 +223,8 @@
                   <label for="contactPhone">
                     Phone Number <span class="form-optional">(optional)</span>
                   </label>
-                  <input
-                    type="tel"
-                    id="contactPhone"
-                    name="phone"
-                    class="form-control"
-                    placeholder="+91 00000 00000"
-                    autocomplete="tel"
-                  />
+                  <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="+91 00000 00000"
+                    autocomplete="tel" />
                 </div>
 
                 <!-- Subject -->
@@ -248,12 +232,7 @@
                   <label for="contactSubject">
                     Subject <span aria-label="required">*</span>
                   </label>
-                  <select
-                    id="contactSubject"
-                    name="subject"
-                    class="form-control"
-                    required
-                  >
+                  <select id="contactSubject" name="subject" class="form-control" required>
                     <option value="" disabled selected>Select a subject…</option>
                     <option value="reservation">Table Reservation</option>
                     <option value="feedback">Feedback</option>
@@ -268,14 +247,8 @@
                   <label for="contactMessage">
                     Message <span aria-label="required">*</span>
                   </label>
-                  <textarea
-                    id="contactMessage"
-                    name="message"
-                    class="form-control"
-                    rows="6"
-                    placeholder="Write your message here…"
-                    required
-                  ></textarea>
+                  <textarea id="contactMessage" name="message" class="form-control" rows="6"
+                    placeholder="Write your message here…" required></textarea>
                   <span class="form-error" id="messageError" role="alert"></span>
                 </div>
 
@@ -314,29 +287,18 @@
 
       <!-- Full-width map embed -->
       <div class="map-embed-wrapper">
-        <iframe
-          class="map-embed"
+        <iframe class="map-embed"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14329.23456789!2d91.0057!3d26.3223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375bfb69aaaaaaaa%3A0xbbbbbbbbbbbbbbbb!2sBarpeta%2C%20Assam%2C%20India!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-          title="Restaurant Location — Barpeta, Assam on Google Maps"
-          width="100%"
-          height="460"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          aria-label="Google Maps showing restaurant location in Barpeta, Assam"
-        ></iframe>
+          title="Restaurant Location — Barpeta, Assam on Google Maps" width="100%" height="460" style="border:0;"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          aria-label="Google Maps showing restaurant location in Barpeta, Assam"></iframe>
       </div>
 
       <!-- Directions button below map -->
       <div class="container">
         <div class="map-section__actions">
-          <a
-            href="https://maps.google.com/?q=Barpeta,Assam,India"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-primary"
-          >
+          <a href="https://maps.google.com/?q=Barpeta,Assam,India" target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary">
             📍 Get Directions
           </a>
           <a href="tel:+911234567890" class="btn btn-outline">
@@ -365,14 +327,32 @@
             with quality ingredients and heart — since 2010.
           </p>
           <div class="footer__social" aria-label="Follow us on social media">
-            <a href="https://facebook.com"  class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <a href="https://facebook.com" class="footer__social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook">
+              <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
             </a>
-            <a href="https://instagram.com" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            <a href="https://instagram.com" class="footer__social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
+              <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
             </a>
-            <a href="https://wa.me/911234567890" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-              <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535 5.856L.057 23.885a.5.5 0 0 0 .606.61l6.213-1.63A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 0 1-5.045-1.396l-.361-.214-3.735.979.998-3.648-.235-.374A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            <a href="https://wa.me/911234567890" class="footer__social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp">
+              <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z" />
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535 5.856L.057 23.885a.5.5 0 0 0 .606.61l6.213-1.63A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 0 1-5.045-1.396l-.361-.214-3.735.979.998-3.648-.235-.374A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
+              </svg>
             </a>
           </div>
         </div>
@@ -380,9 +360,12 @@
         <div class="footer__col footer__col--links">
           <h3 class="footer__col-title">Quick Links</h3>
           <ul class="footer__links-list">
-            <li><a href="index.html"   class="footer__link"><span class="footer__link-arrow" aria-hidden="true">›</span>Home</a></li>
-            <li><a href="menu.html"    class="footer__link"><span class="footer__link-arrow" aria-hidden="true">›</span>Menu</a></li>
-            <li><a href="contact.html" class="footer__link"><span class="footer__link-arrow" aria-hidden="true">›</span>Contact</a></li>
+            <li><a href="index.html" class="footer__link"><span class="footer__link-arrow"
+                  aria-hidden="true">›</span>Home</a></li>
+            <li><a href="menu.html" class="footer__link"><span class="footer__link-arrow"
+                  aria-hidden="true">›</span>Menu</a></li>
+            <li><a href="contact.html" class="footer__link"><span class="footer__link-arrow"
+                  aria-hidden="true">›</span>Contact</a></li>
           </ul>
         </div>
 
@@ -430,19 +413,13 @@
      Fixed bottom-right, visible on all pages.
      position:fixed in CSS keeps it on screen always.
      ================================================ -->
-<a
-  href="https://wa.me/911234567890?text=Hello%20I%20would%20like%20to%20place%20an%20order"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="whatsapp-float"
-  id="whatsappFloat"
-  aria-label="Chat or order on WhatsApp"
->
+  <a href="https://wa.me/911234567890?text=Hello%20I%20would%20like%20to%20place%20an%20order" target="_blank"
+    rel="noopener noreferrer" class="whatsapp-float" id="whatsappFloat" aria-label="Chat or order on WhatsApp">
 
-  <!-- WhatsApp icon -->
-  <svg class="whatsapp-float__icon" xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099
+    <!-- WhatsApp icon -->
+    <svg class="whatsapp-float__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+      aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099
       -.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223
       -.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761
       -1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446
@@ -451,24 +428,25 @@
       -.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016
       -1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2
       5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871
-      .118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/>
-    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535
+      .118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z" />
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535
       5.856L.057 23.885a.5.5 0 0 0 .606.61l6.213-1.63A11.945 11.945
       0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805
       9.805 0 0 1-5.045-1.396l-.361-.214-3.735.979.998-3.648-.235-.374
       A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182
-      S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
-  </svg>
+      S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
+    </svg>
 
-  <!-- Tooltip label — shown on hover -->
-  <span class="whatsapp-float__label" aria-hidden="true">Order on WhatsApp</span>
+    <!-- Tooltip label — shown on hover -->
+    <span class="whatsapp-float__label" aria-hidden="true">Order on WhatsApp</span>
 
-  <!-- Notification pulse dot -->
-  <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+    <!-- Notification pulse dot -->
+    <span class="whatsapp-float__pulse" aria-hidden="true"></span>
 
-</a>
+  </a>
 
   <script src="js/script.js"></script>
 
 </body>
+
 </html>
