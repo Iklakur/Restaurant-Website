@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact The Restaurant — find our address, phone, email and send us a message." />
+  <title>Contact | The Restaurant</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR (same as index.html) ========== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container navbar__inner">
+
+        <a href="index.html" class="navbar__logo">🍽️ The Restaurant</a>
+
+        <button class="navbar__toggle" id="navToggle"
+          aria-controls="navMenu" aria-expanded="false"
+          aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <ul class="navbar__menu" id="navMenu">
+          <li><a href="index.html"   class="navbar__link">Home</a></li>
+          <li><a href="menu.html"    class="navbar__link">Menu</a></li>
+          <li><a href="contact.html" class="navbar__link">Contact</a></li>
+        </ul>
+
+      </div>
+    
+    </nav>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main>
+
+    <!-- ── Page Banner ── -->
+    <section class="page-banner" aria-label="Contact page banner">
+      <div class="container">
+        <span class="section-badge">📍 We'd Love to Hear From You</span>
+        <h1 class="page-banner__title">Contact Us</h1>
+        <p class="page-banner__subtitle">
+          Have a question, reservation request or feedback? Reach out — we reply within 24 hours.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         CONTACT SECTION
+         Two-column layout:
+           LEFT  — restaurant contact information
+           RIGHT — contact form
+         Stacks to single column on mobile via CSS.
+         ======================================================== -->
+    <section class="contact-section section" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <h2 id="contact-heading" class="sr-only">Contact Information and Form</h2>
+
+        <div class="contact__inner">
+
+          <!-- ══════════════════════════════════════════
+               LEFT — Contact Information
+               ══════════════════════════════════════════ -->
+          <div class="contact__info-col">
+
+            <!-- Restaurant Identity -->
+            <div class="contact-block">
+              <span class="contact-block__icon" aria-hidden="true">🍽️</span>
+              <div>
+                <h3 class="contact-block__title">The Restaurant</h3>
+                <p class="contact-block__text">
+                  Serving fresh, delicious meals crafted with quality
+                  ingredients and heart — since 2010.
+                </p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-block">
+              <span class="contact-block__icon" aria-hidden="true">📞</span>
+              <div>
+                <h3 class="contact-block__title">Phone</h3>
+                <a href="tel:+911234567890" class="contact-block__link">
+                  +91 12345 67890
+                </a>
+                <p class="contact-block__note">Available daily 9 AM – 11 PM</p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-block">
+              <span class="contact-block__icon" aria-hidden="true">✉️</span>
+              <div>
+                <h3 class="contact-block__title">Email</h3>
+                <a href="mailto:hello@therestaurant.com" class="contact-block__link">
+                  hello@therestaurant.com
+                </a>
+                <p class="contact-block__note">We reply within 24 hours</p>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="contact-block">
+              <span class="contact-block__icon" aria-hidden="true">📍</span>
+              <div>
+                <h3 class="contact-block__title">Address</h3>
+                <address class="contact-block__address">
+                  123 Main Street,<br />
+                  Barpeta, Assam – 781301,<br />
+                  India
+                </address>
+              </div>
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="contact-block">
+              <span class="contact-block__icon" aria-hidden="true">🕐</span>
+              <div>
+                <h3 class="contact-block__title">Opening Hours</h3>
+                <table class="hours-table" aria-label="Opening hours">
+                  <tbody>
+                    <tr>
+                      <td class="hours-table__day">Monday – Friday</td>
+                      <td class="hours-table__time">9:00 AM – 11:00 PM</td>
+                    </tr>
+                    <tr>
+                      <td class="hours-table__day">Saturday</td>
+                      <td class="hours-table__time">8:00 AM – 12:00 AM</td>
+                    </tr>
+                    <tr>
+                      <td class="hours-table__day">Sunday</td>
+                      <td class="hours-table__time">10:00 AM – 10:00 PM</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="contact-block">
+              <span class="contact-block__icon" aria-hidden="true">🌐</span>
+              <div>
+                <h3 class="contact-block__title">Follow Us</h3>
+                <div class="contact-social">
+                  <a href="https://facebook.com"  class="contact-social__link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    Facebook
+                  </a>
+                  <a href="https://instagram.com" class="contact-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                    Instagram
+                  </a>
+                  <a href="https://wa.me/911234567890" class="contact-social__link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535 5.856L.057 23.885a.5.5 0 0 0 .606.61l6.213-1.63A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 0 1-5.045-1.396l-.361-.214-3.735.979.998-3.648-.235-.374A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+                    WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- END contact__info-col -->
+
+
+          <!-- ══════════════════════════════════════════
+               RIGHT — Contact Form
+               ══════════════════════════════════════════ -->
+          <div class="contact__form-col">
+            <div class="contact-form-card">
+
+              <div class="contact-form-card__header">
+                <h2 class="contact-form-card__title">Send Us a Message</h2>
+                <p class="contact-form-card__subtitle">
+                  Fill in the form below and we'll get back to you as soon as possible.
+                </p>
+              </div>
+
+              <!-- Success message — shown by JS after submit -->
+              <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+                ✅ Thank you! Your message has been sent. We'll reply within 24 hours.
+              </div>
+
+              <form class="contact-form" id="contactForm" novalidate>
+
+                <!-- Name + Email row -->
+                <div class="form-row">
+
+                  <div class="form-group">
+                    <label for="contactName">
+                      Full Name <span aria-label="required">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="contactName"
+                      name="name"
+                      class="form-control"
+                      placeholder="Your full name"
+                      autocomplete="name"
+                      required
+                    />
+                    <span class="form-error" id="nameError" role="alert"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contactEmail">
+                      Email Address <span aria-label="required">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="contactEmail"
+                      name="email"
+                      class="form-control"
+                      placeholder="you@example.com"
+                      autocomplete="email"
+                      required
+                    />
+                    <span class="form-error" id="emailError" role="alert"></span>
+                  </div>
+
+                </div>
+                <!-- END form-row -->
+
+                <!-- Phone (optional) -->
+                <div class="form-group">
+                  <label for="contactPhone">
+                    Phone Number <span class="form-optional">(optional)</span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="contactPhone"
+                    name="phone"
+                    class="form-control"
+                    placeholder="+91 00000 00000"
+                    autocomplete="tel"
+                  />
+                </div>
+
+                <!-- Subject -->
+                <div class="form-group">
+                  <label for="contactSubject">
+                    Subject <span aria-label="required">*</span>
+                  </label>
+                  <select
+                    id="contactSubject"
+                    name="subject"
+                    class="form-control"
+                    required
+                  >
+                    <option value="" disabled selected>Select a subject…</option>
+                    <option value="reservation">Table Reservation</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="catering">Catering Enquiry</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <span class="form-error" id="subjectError" role="alert"></span>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                  <label for="contactMessage">
+                    Message <span aria-label="required">*</span>
+                  </label>
+                  <textarea
+                    id="contactMessage"
+                    name="message"
+                    class="form-control"
+                    rows="6"
+                    placeholder="Write your message here…"
+                    required
+                  ></textarea>
+                  <span class="form-error" id="messageError" role="alert"></span>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="btn btn-primary form-submit-btn">
+                  ✉️ Send Message
+                </button>
+
+              </form>
+
+            </div>
+          </div>
+          <!-- END contact__form-col -->
+
+        </div>
+        <!-- END contact__inner -->
+
+      </div>
+    </section>
+    <!-- END CONTACT SECTION -->
+
+
+    <!-- ========================================================
+         GOOGLE MAPS SECTION
+         Shows restaurant location via embedded iframe.
+         ======================================================== -->
+    <section class="map-section" aria-labelledby="map-heading">
+      <div class="container">
+        <div class="map-section__header">
+          <h2 id="map-heading" class="map-section__title">Find Us Here</h2>
+          <p class="map-section__subtitle">
+            We're located in the heart of Barpeta, Assam. Easy parking available nearby.
+          </p>
+        </div>
+      </div>
+
+      <!-- Full-width map embed -->
+      <div class="map-embed-wrapper">
+        <iframe
+          class="map-embed"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14329.23456789!2d91.0057!3d26.3223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375bfb69aaaaaaaa%3A0xbbbbbbbbbbbbbbbb!2sBarpeta%2C%20Assam%2C%20India!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          title="Restaurant Location — Barpeta, Assam on Google Maps"
+          width="100%"
+          height="460"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          aria-label="Google Maps showing restaurant location in Barpeta, Assam"
+        ></iframe>
+      </div>
+
+      <!-- Directions button below map -->
+      <div class="container">
+        <div class="map-section__actions">
+          <a
+            href="https://maps.google.com/?q=Barpeta,Assam,India"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            📍 Get Directions
+          </a>
+          <a href="tel:+911234567890" class="btn btn-outline">
+            📞 Call for Directions
+          </a>
+        </div>
+      </div>
+
+    </section>
+    <!-- END MAP SECTION -->
+
+  </main>
+
+
+  <!-- ========== FOOTER (same as index.html) ========== -->
+  <footer class="site-footer" aria-labelledby="footer-label">
+    <h2 id="footer-label" class="sr-only">Footer</h2>
+
+    <div class="footer__top">
+      <div class="container footer__grid">
+
+        <div class="footer__col footer__col--brand">
+          <a href="index.html" class="footer__logo">🍽️ The Restaurant</a>
+          <p class="footer__brand-desc">
+            A family-owned restaurant serving fresh, delicious meals crafted
+            with quality ingredients and heart — since 2010.
+          </p>
+          <div class="footer__social" aria-label="Follow us on social media">
+            <a href="https://facebook.com"  class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://instagram.com" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://wa.me/911234567890" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535 5.856L.057 23.885a.5.5 0 0 0 .606.61l6.213-1.63A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 0 1-5.045-1.396l-.361-.214-3.735.979.998-3.648-.235-.374A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col footer__col--links">
+          <h3 class="footer__col-title">Quick Links</h3>
+          <ul class="footer__links-list">
+            <li><a href="index.html"   class="footer__link"><span class="footer__link-arrow" aria-hidden="true">›</span>Home</a></li>
+            <li><a href="menu.html"    class="footer__link"><span class="footer__link-arrow" aria-hidden="true">›</span>Menu</a></li>
+            <li><a href="contact.html" class="footer__link"><span class="footer__link-arrow" aria-hidden="true">›</span>Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--contact">
+          <h3 class="footer__col-title">Get In Touch</h3>
+          <address class="footer__contact-list">
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon" aria-hidden="true">📞</span>
+              <a href="tel:+911234567890" class="footer__link">+91 12345 67890</a>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon" aria-hidden="true">✉️</span>
+              <a href="mailto:hello@therestaurant.com" class="footer__link">hello@therestaurant.com</a>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon" aria-hidden="true">📍</span>
+              <span>123 Main Street, Barpeta, Assam – 781301</span>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon" aria-hidden="true">🕐</span>
+              <span>Open Daily: 9:00 AM – 11:00 PM</span>
+            </div>
+          </address>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copyright">
+          &copy; <span id="footerYear"></span> The Restaurant. All rights reserved.
+        </p>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          <span class="footer__bottom-sep" aria-hidden="true">·</span>
+          <a href="#" class="footer__bottom-link">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- ================================================
+     FLOATING WHATSAPP BUTTON
+     Fixed bottom-right, visible on all pages.
+     position:fixed in CSS keeps it on screen always.
+     ================================================ -->
+<a
+  href="https://wa.me/911234567890?text=Hello%20I%20would%20like%20to%20place%20an%20order"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="whatsapp-float"
+  id="whatsappFloat"
+  aria-label="Chat or order on WhatsApp"
+>
+
+  <!-- WhatsApp icon -->
+  <svg class="whatsapp-float__icon" xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099
+      -.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223
+      -.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761
+      -1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446
+      -.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075
+      -.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008
+      -.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016
+      -1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2
+      5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871
+      .118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535
+      5.856L.057 23.885a.5.5 0 0 0 .606.61l6.213-1.63A11.945 11.945
+      0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805
+      9.805 0 0 1-5.045-1.396l-.361-.214-3.735.979.998-3.648-.235-.374
+      A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182
+      S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+  </svg>
+
+  <!-- Tooltip label — shown on hover -->
+  <span class="whatsapp-float__label" aria-hidden="true">Order on WhatsApp</span>
+
+  <!-- Notification pulse dot -->
+  <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+
+</a>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
