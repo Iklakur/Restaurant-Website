@@ -1,481 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Welcome to our restaurant - fresh food, great atmosphere." />
-    <title>Home | The Restaurant</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to our restaurant - fresh food, great atmosphere." />
+  <title>Home | The Restaurant</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-  <body>
+<body>
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">🍽️ The Restaurant</a>
 
-    <!-- ===== HEADER & NAVBAR ===== -->
-    <header class="site-header">
-      <nav class="navbar" aria-label="Main navigation">
-        <div class="container navbar__inner">
+      <ul class="navbar__menunu">
+        ><a href="index.html" class="navbar__link">Home</a></l/li>
+        ><a href="menu.html" class="navbar__link">Menu</a></l/li>
+        ><a href="contact.html" class="navbar__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-          <!-- Logo / Brand Name -->
-          <a href="index.html" class="navbar__logo" aria-label="The Restaurant - Go to homepage">
-            🍽️ The Restaurant
-          </a>
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
 
-          <!-- Hamburger Button (mobile only) -->
-          <button
-            class="navbar__toggle"
-            id="navToggle"
-            aria-controls="navMenu"
-            aria-expanded="false"
-            aria-label="Toggle navigation menu"
-          >
-            <span class="navbar__toggle-bar"></span>
-            <span class="navbar__toggle-bar"></span>
-            <span class="navbar__toggle-bar"></span>
-          </button>
-
-          <!-- Navigation Links -->
-          <ul class="navbar__menu" id="navMenu" role="list">
-            <li class="navbar__item">
-              <a href="index.html" class="navbar__link">Home</a>
-            </li>
-            <li class="navbar__item">
-              <a href="menu.html" class="navbar__link">Menu</a>
-            </li>
-            <li class="navbar__item">
-              <a href="contact.html" class="navbar__link">Contact</a>
-            </li>
-          </ul>
-
-        </div>
-
-      </nav>
-    </header>
-
-    <!-- ===== MAIN CONTENT ===== -->
-    <main>
-
-      <!-- ================================================
+    <!-- ================================================
            HERO SECTION
            Background image set in CSS via .hero class.
            A dark gradient overlay keeps text readable.
            ================================================ -->
-      <section class="hero" aria-label="Welcome to The Restaurant">
+    <section class="hero" aria-label="Welcome to The Restaurant">
 
-        <!-- Dark gradient overlay layer (CSS ::before handles this) -->
+      <!-- Dark gradient overlay layer (CSS ::before handles this) -->
 
-        <!-- Centered content box -->
-        <div class="container hero__container">
-          <div class="hero__content">
+      <!-- Centered content box -->
+      <div class="container hero__container">
+        <div class="hero__content">
 
-            <!-- Badge / eyebrow label above the heading -->
-            <span class="hero__badge">✨ Now Open Daily</span>
+          <!-- Badge / eyebrow label above the heading -->
+          <span class="hero__badge">✨ Now Open Daily</span>
 
-            <!-- Main restaurant heading -->
-            <h1 class="hero__heading">
-              Welcome to <br />
-              <span class="hero__heading-accent">The Restaurant</span>
-            </h1>
+          <!-- Main restaurant heading -->
+          <h1 class="hero__heading">
+            Welcome to <br />
+            <span class="hero__heading-accent">The Restaurant</span>
+          </h1>
 
-            <!-- Tagline -->
-            <p class="hero__tagline">
-              Delicious food made fresh every day —<br />
-              crafted with love, served with passion.
-            </p>
+          <!-- Tagline -->
+          <p class="hero__tagline">
+            Delicious food made fresh every day —<br />
+            crafted with love, served with passion.
+          </p>
 
-            <!-- CTA Buttons -->
-            <div class="hero__actions">
+          <!-- CTA Buttons -->
+          <div class="hero__actions">
 
-              <!-- Primary CTA: View Menu -->
-              <a
-                href="menu.html"
-                class="btn btn-primary hero__btn"
-                aria-label="View our full menu"
-              >
-                🍴 View Menu
-              </a>
+            <!-- Primary CTA: View Menu -->
+            <a href="menu.html" class="btn btn-primary hero__btn" aria-label="View our full menu">
+              🍴 View Menu
+            </a>
 
-              <!-- Secondary CTA: Order on WhatsApp -->
-              <a
-                href="https://wa.me/911234567890"
-                class="btn btn-whatsapp hero__btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Order on WhatsApp (opens in new tab)"
-              >
-                <svg
-                  class="hero__whatsapp-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-                  <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535 5.856L.057 23.885a.5.5 0 0 0 .606.61l6.213-1.63A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 0 1-5.045-1.396l-.361-.214-3.735.979.998-3.648-.235-.374A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
-                </svg>
-                Order on WhatsApp
-              </a>
-    
+            <!-- Secondary CTA: Order on WhatsApp -->
+            <a href="https://wa.me/911234567890" class="btn btn-whatsapp hero__btn" target="_blank"
+              rel="noopener noreferrer" aria-label="Order on WhatsApp (opens in new tab)">
+              <svg class="hero__whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="currentColor" aria-hidden="true" focusable="false">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535 5.856L.057 23.885a.5.5 0 0 0 .606.61l6.213-1.63A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 0 1-5.045-1.396l-.361-.214-3.735.979.998-3.648-.235-.374A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
+              </svg>
+              Order on WhatsApp
+            </a>
 
-            </div>
-
-            <!-- Trust signal below buttons -->
-            <p class="hero__trust">
-              📍 &nbsp;Find us at Main Street &nbsp;|&nbsp; ⏰ &nbsp;Open 11 AM – 11 PM
-            </p>
 
           </div>
+
+          <!-- Trust signal below buttons -->
+          <p class="hero__trust">
+            📍 &nbsp;Find us at Main Street &nbsp;|&nbsp; ⏰ &nbsp;Open 11 AM – 11 PM
+          </p>
+
         </div>
+      </div>
 
-      </section>
-      <!-- END HERO SECTION -->
+    </section>
+    <!-- END HERO SECTION -->
 
-      <!-- ================================================
+    <!-- ================================================
        FEATURED DISHES SECTION
        Displays 3 food cards in a responsive grid.
        ================================================ -->
-  <section class="featured-dishes section" aria-labelledby="featured-heading">
-    <div class="container">
+    <section class="featured-dishes section" aria-labelledby="featured-heading">
+      <div class="container">
 
-      <!-- Section Header -->
-      <div class="section-header text-center">
-        <span class="section-badge">⭐ Fan Favourites</span>
-        <h2 class="section-title" id="featured-heading">Our Popular Dishes</h2>
-        <p class="section-subtitle">
-          Handpicked favourites loved by our guests — made fresh daily with the finest ingredients.
-        </p>
-      </div>
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-badge">⭐ Fan Favourites</span>
+          <h2 class="section-title" id="featured-heading">Our Popular Dishes</h2>
+          <p class="section-subtitle">
+            Handpicked favourites loved by our guests — made fresh daily with the finest ingredients.
+          </p>
+        </div>
 
-      <!-- Dishes Grid -->
-      <div class="dishes-grid" role="list">
+        <!-- Dishes Grid -->
+        <div class="dishes-grid" role="list">
 
-        <!-- ── Card 1: Margherita Pizza ── -->
-        <article class="dish-card" role="listitem">
-          <div class="dish-card__image-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=80"
-              alt="Margherita Pizza — fresh tomato, mozzarella and basil"
-              class="dish-card__image"
-              loading="lazy"
-            />
-            <span class="dish-card__tag">Bestseller</span>
-          </div>
-          <div class="dish-card__body">
-            <div class="dish-card__top">
-              <h3 class="dish-card__name">Margherita Pizza</h3>
-              <span class="dish-card__price">₹349</span>
+          <!-- ── Card 1: Margherita Pizza ── -->
+          <article class="dish-card" role="listitem">
+            <div class="dish-card__image-wrapper">
+              <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=600&q=80"
+                alt="Margherita Pizza — fresh tomato, mozzarella and basil" class="dish-card__image" loading="lazy" />
+              <span class="dish-card__tag">Bestseller</span>
             </div>
-            <p class="dish-card__desc">
-              Classic wood-fired pizza topped with fresh tomato sauce,
-              creamy mozzarella, and fragrant basil leaves.
-            </p>
-            <a href="menu.html" class="btn btn-outline dish-card__btn" aria-label="See Margherita Pizza on the menu">
-              View on Menu →
-            </a>
-          </div>
-        </article>
-
-        <!-- ── Card 2: Chicken Burger ── -->
-        <article class="dish-card" role="listitem">
-          <div class="dish-card__image-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
-              alt="Juicy Chicken Burger with lettuce, tomato and special sauce"
-              class="dish-card__image"
-              loading="lazy"
-            />
-            <span class="dish-card__tag dish-card__tag--hot">🔥 Spicy</span>
-          </div>
-          <div class="dish-card__body">
-            <div class="dish-card__top">
-              <h3 class="dish-card__name">Chicken Burger</h3>
-              <span class="dish-card__price">₹299</span>
+            <div class="dish-card__body">
+              <div class="dish-card__top">
+                <h3 class="dish-card__name">Margherita Pizza</h3>
+                <span class="dish-card__price">₹349</span>
+              </div>
+              <p class="dish-card__desc">
+                Classic wood-fired pizza topped with fresh tomato sauce,
+                creamy mozzarella, and fragrant basil leaves.
+              </p>
+              <a href="menu.html" class="btn btn-outline dish-card__btn" aria-label="See Margherita Pizza on the menu">
+                View on Menu →
+              </a>
             </div>
-            <p class="dish-card__desc">
-              Crispy grilled chicken fillet stacked with fresh lettuce,
-              tomatoes, and our signature spicy mayo sauce.
-            </p>
-            <a href="menu.html" class="btn btn-outline dish-card__btn" aria-label="See Chicken Burger on the menu">
-              View on Menu →
-            </a>
-          </div>
-        </article>
+          </article>
 
-        <!-- ── Card 3: Pasta Alfredo ── -->
-        <article class="dish-card" role="listitem">
-          <div class="dish-card__image-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=600&q=80"
-              alt="Creamy Pasta Alfredo with parmesan and herbs"
-              class="dish-card__image"
-              loading="lazy"
-            />
-            <span class="dish-card__tag dish-card__tag--new">New</span>
-          </div>
-          <div class="dish-card__body">
-            <div class="dish-card__top">
-              <h3 class="dish-card__name">Pasta Alfredo</h3>
-              <span class="dish-card__price">₹329</span>
+          <!-- ── Card 2: Chicken Burger ── -->
+          <article class="dish-card" role="listitem">
+            <div class="dish-card__image-wrapper">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
+                alt="Juicy Chicken Burger with lettuce, tomato and special sauce" class="dish-card__image"
+                loading="lazy" />
+              <span class="dish-card__tag dish-card__tag--hot">🔥 Spicy</span>
             </div>
-            <p class="dish-card__desc">
-              Rich and velvety fettuccine pasta tossed in a homemade
-              Alfredo cream sauce, finished with aged parmesan.
-            </p>
-            <a href="menu.html" class="btn btn-outline dish-card__btn" aria-label="See Pasta Alfredo on the menu">
-              View on Menu →
-            </a>
-          </div>
-        </article>
+            <div class="dish-card__body">
+              <div class="dish-card__top">
+                <h3 class="dish-card__name">Chicken Burger</h3>
+                <span class="dish-card__price">₹299</span>
+              </div>
+              <p class="dish-card__desc">
+                Crispy grilled chicken fillet stacked with fresh lettuce,
+                tomatoes, and our signature spicy mayo sauce.
+              </p>
+              <a href="menu.html" class="btn btn-outline dish-card__btn" aria-label="See Chicken Burger on the menu">
+                View on Menu →
+              </a>
+            </div>
+          </article>
+
+          <!-- ── Card 3: Pasta Alfredo ── -->
+          <article class="dish-card" role="listitem">
+            <div class="dish-card__image-wrapper">
+              <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=600&q=80"
+                alt="Creamy Pasta Alfredo with parmesan and herbs" class="dish-card__image" loading="lazy" />
+              <span class="dish-card__tag dish-card__tag--new">New</span>
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__top">
+                <h3 class="dish-card__name">Pasta Alfredo</h3>
+                <span class="dish-card__price">₹329</span>
+              </div>
+              <p class="dish-card__desc">
+                Rich and velvety fettuccine pasta tossed in a homemade
+                Alfredo cream sauce, finished with aged parmesan.
+              </p>
+              <a href="menu.html" class="btn btn-outline dish-card__btn" aria-label="See Pasta Alfredo on the menu">
+                View on Menu →
+              </a>
+            </div>
+          </article>
+
+        </div>
+        <!-- END dishes-grid -->
+
+        <!-- Bottom CTA — links to full menu page -->
+        <div class="featured-dishes__cta text-center">
+          <p class="text-muted">Craving something else?</p>
+          <a href="menu.html" class="btn btn-primary">
+            🍴 See Full Menu
+          </a>
+        </div>
 
       </div>
-      <!-- END dishes-grid -->
+    </section>
+    <!-- END FEATURED DISHES SECTION -->
 
-      <!-- Bottom CTA — links to full menu page -->
-      <div class="featured-dishes__cta text-center">
-        <p class="text-muted">Craving something else?</p>
-        <a href="menu.html" class="btn btn-primary">
-          🍴 See Full Menu
-        </a>
-      </div>
-
-    </div>
-  </section>
-  <!-- END FEATURED DISHES SECTION -->
-
-  <!-- ================================================
+    <!-- ================================================
      ABOUT SECTION
      Two-column layout: image left, text right.
      Stacks vertically on mobile via flex-wrap.
      ================================================ -->
-<section class="about section" aria-labelledby="about-heading">
-  <div class="container">
+    <section class="about section" aria-labelledby="about-heading">
+      <div class="container">
 
-    <div class="about__inner">
+        <div class="about__inner">
 
-      <!-- ── Left Column: Restaurant Image ── -->
-      <div class="about__image-col">
+          <!-- ── Left Column: Restaurant Image ── -->
+          <div class="about__image-col">
 
-        <!-- Decorative accent block behind the image -->
-        <div class="about__image-wrapper">
-          <img
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
-            alt="Interior of The Restaurant — warm lighting and welcoming atmosphere"
-            class="about__image"
-            loading="lazy"
-          />
+            <!-- Decorative accent block behind the image -->
+            <div class="about__image-wrapper">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
+                alt="Interior of The Restaurant — warm lighting and welcoming atmosphere" class="about__image"
+                loading="lazy" />
 
-          <!-- Floating stat badge overlaid on the image -->
-          <div class="about__stat-badge">
-            <span class="about__stat-number">15+</span>
-            <span class="about__stat-label">Years of<br/>Experience</span>
+              <!-- Floating stat badge overlaid on the image -->
+              <div class="about__stat-badge">
+                <span class="about__stat-number">15+</span>
+                <span class="about__stat-label">Years of<br />Experience</span>
+              </div>
+            </div>
+
           </div>
+          <!-- END Left Column -->
+
+          <!-- ── Right Column: Text Content ── -->
+          <div class="about__text-col">
+
+            <!-- Section badge -->
+            <span class="section-badge">🏡 Our Story</span>
+
+            <!-- Heading -->
+            <h2 class="section-title" id="about-heading">
+              About Our Restaurant
+            </h2>
+
+            <!-- Main description -->
+            <p class="about__desc">
+              We are a family-owned restaurant serving delicious and fresh meals
+              made with quality ingredients sourced from local farms. Our mission
+              is to create a warm dining experience with authentic flavours that
+              remind you of home.
+            </p>
+
+            <p class="about__desc">
+              Every dish is crafted with love by our experienced chefs who bring
+              generations of culinary tradition to your table. Whether it's a quick
+              lunch or a special celebration dinner, we make every meal memorable.
+            </p>
+
+            <!-- Icon highlights list -->
+            <ul class="about__highlights" role="list">
+              <li class="about__highlight-item">
+                <span class="about__highlight-icon" aria-hidden="true">🥬</span>
+                <div>
+                  <strong>Fresh Ingredients</strong>
+                  <p>Locally sourced produce delivered daily</p>
+                </div>
+              </li>
+              <li class="about__highlight-item">
+                <span class="about__highlight-icon" aria-hidden="true">👨‍🍳</span>
+                <div>
+                  <strong>Expert Chefs</strong>
+                  <p>Award-winning culinary team with 15+ years experience</p>
+                </div>
+              </li>
+              <li class="about__highlight-item">
+                <span class="about__highlight-icon" aria-hidden="true">🏡</span>
+                <div>
+                  <strong>Family Owned</strong>
+                  <p>A warm, welcoming space for every guest</p>
+                </div>
+              </li>
+            </ul>
+
+            <!-- CTA -->
+            <div class="about__actions">
+              <a href="menu.html" class="btn btn-primary">🍴 Explore Our Menu</a>
+              <a href="contact.html" class="btn btn-outline">📍 Find Us</a>
+            </div>
+
+          </div>
+          <!-- END Right Column -->
+
         </div>
 
       </div>
-      <!-- END Left Column -->
-
-      <!-- ── Right Column: Text Content ── -->
-      <div class="about__text-col">
-
-        <!-- Section badge -->
-        <span class="section-badge">🏡 Our Story</span>
-
-        <!-- Heading -->
-        <h2 class="section-title" id="about-heading">
-          About Our Restaurant
-        </h2>
-
-        <!-- Main description -->
-        <p class="about__desc">
-          We are a family-owned restaurant serving delicious and fresh meals
-          made with quality ingredients sourced from local farms. Our mission
-          is to create a warm dining experience with authentic flavours that
-          remind you of home.
-        </p>
-
-        <p class="about__desc">
-          Every dish is crafted with love by our experienced chefs who bring
-          generations of culinary tradition to your table. Whether it's a quick
-          lunch or a special celebration dinner, we make every meal memorable.
-        </p>
-
-        <!-- Icon highlights list -->
-        <ul class="about__highlights" role="list">
-          <li class="about__highlight-item">
-            <span class="about__highlight-icon" aria-hidden="true">🥬</span>
-            <div>
-              <strong>Fresh Ingredients</strong>
-              <p>Locally sourced produce delivered daily</p>
-            </div>
-          </li>
-          <li class="about__highlight-item">
-            <span class="about__highlight-icon" aria-hidden="true">👨‍🍳</span>
-            <div>
-              <strong>Expert Chefs</strong>
-              <p>Award-winning culinary team with 15+ years experience</p>
-            </div>
-          </li>
-          <li class="about__highlight-item">
-            <span class="about__highlight-icon" aria-hidden="true">🏡</span>
-            <div>
-              <strong>Family Owned</strong>
-              <p>A warm, welcoming space for every guest</p>
-            </div>
-          </li>
-        </ul>
-
-        <!-- CTA -->
-        <div class="about__actions">
-          <a href="menu.html" class="btn btn-primary">🍴 Explore Our Menu</a>
-          <a href="contact.html" class="btn btn-outline">📍 Find Us</a>
-        </div>
-
-      </div>
-      <!-- END Right Column -->
-
-    </div>
-
-  </div>
-</section>
-<!-- END ABOUT SECTION -->
- <!-- ================================================
+    </section>
+    <!-- END ABOUT SECTION -->
+    <!-- ================================================
      VISIT US SECTION
      Two-column layout:
        Left  → Opening Hours
        Right → Address + Google Maps embed
      Stacks vertically on mobile via flex-wrap.
      ================================================ -->
-<section class="visit-us section" aria-labelledby="visit-heading">
-  <div class="container">
+    <section class="visit-us section" aria-labelledby="visit-heading">
+      <div class="container">
 
-    <!-- Section Header (centered above both columns) -->
-    <div class="section-header text-center">
-      <span class="section-badge">📍 Come Visit Us</span>
-      <h2 class="section-title" id="visit-heading">Find Us & Our Hours</h2>
-      <p class="section-subtitle">
-        We'd love to welcome you. Here's everything you need to plan your visit.
-      </p>
-    </div>
-
-    <!-- Two-column inner wrapper -->
-    <div class="visit-us__inner">
-
-      <!-- ── Left Column: Opening Hours ── -->
-      <div class="visit-us__col visit-us__col--hours">
-
-        <!-- Card wrapper -->
-        <div class="info-card">
-
-          <!-- Card icon + title -->
-          <div class="info-card__header">
-            <span class="info-card__icon" aria-hidden="true">🕐</span>
-            <h3 class="info-card__title">Opening Hours</h3>
-          </div>
-
-          <!-- Hours list -->
-          <ul class="hours-list" role="list" aria-label="Restaurant opening hours">
-
-            <li class="hours-list__item">
-              <span class="hours-list__day">Monday</span>
-              <span class="hours-list__dots" aria-hidden="true"></span>
-              <span class="hours-list__time">10:00 AM – 10:00 PM</span>
-            </li>
-
-            <li class="hours-list__item">
-              <span class="hours-list__day">Tuesday</span>
-              <span class="hours-list__dots" aria-hidden="true"></span>
-              <span class="hours-list__time">10:00 AM – 10:00 PM</span>
-            </li>
-
-            <li class="hours-list__item">
-              <span class="hours-list__day">Wednesday</span>
-              <span class="hours-list__dots" aria-hidden="true"></span>
-              <span class="hours-list__time">10:00 AM – 10:00 PM</span>
-            </li>
-
-            <li class="hours-list__item">
-              <span class="hours-list__day">Thursday</span>
-              <span class="hours-list__dots" aria-hidden="true"></span>
-              <span class="hours-list__time">10:00 AM – 10:00 PM</span>
-            </li>
-
-            <li class="hours-list__item">
-              <span class="hours-list__day">Friday</span>
-              <span class="hours-list__dots" aria-hidden="true"></span>
-              <span class="hours-list__time">10:00 AM – 11:00 PM</span>
-            </li>
-
-            <li class="hours-list__item hours-list__item--highlight">
-              <span class="hours-list__day">Saturday</span>
-              <span class="hours-list__dots" aria-hidden="true"></span>
-              <span class="hours-list__time">9:00 AM – 11:00 PM</span>
-            </li>
-
-            <li class="hours-list__item hours-list__item--highlight">
-              <span class="hours-list__day">Sunday</span>
-              <span class="hours-list__dots" aria-hidden="true"></span>
-              <span class="hours-list__time">9:00 AM – 11:00 PM</span>
-            </li>
-
-          </ul>
-
-          <!-- Currently open indicator -->
-          <div class="hours-status">
-            <span class="hours-status__dot" aria-hidden="true"></span>
-            <span class="hours-status__text">We're open today — come on in!</span>
-          </div>
-
+        <!-- Section Header (centered above both columns) -->
+        <div class="section-header text-center">
+          <span class="section-badge">📍 Come Visit Us</span>
+          <h2 class="section-title" id="visit-heading">Find Us & Our Hours</h2>
+          <p class="section-subtitle">
+            We'd love to welcome you. Here's everything you need to plan your visit.
+          </p>
         </div>
-        <!-- END info-card -->
 
-      </div>
-      <!-- END Left Column -->
+        <!-- Two-column inner wrapper -->
+        <div class="visit-us__inner">
 
+          <!-- ── Left Column: Opening Hours ── -->
+          <div class="visit-us__col visit-us__col--hours">
 
-      <!-- ── Right Column: Address + Map ── -->
-      <div class="visit-us__col visit-us__col--map">
+            <!-- Card wrapper -->
+            <div class="info-card">
 
-        <!-- Card wrapper -->
-        <div class="info-card">
+              <!-- Card icon + title -->
+              <div class="info-card__header">
+                <span class="info-card__icon" aria-hidden="true">🕐</span>
+                <h3 class="info-card__title">Opening Hours</h3>
+              </div>
 
-          <!-- Card icon + title -->
-          <div class="info-card__header">
-            <span class="info-card__icon" aria-hidden="true">📌</span>
-            <h3 class="info-card__title">Our Location</h3>
+              <!-- Hours list -->
+              <ul class="hours-list" role="list" aria-label="Restaurant opening hours">
+
+                <li class="hours-list__item">
+                  <span class="hours-list__day">Monday</span>
+                  <span class="hours-list__dots" aria-hidden="true"></span>
+                  <span class="hours-list__time">10:00 AM – 10:00 PM</span>
+                </li>
+
+                <li class="hours-list__item">
+                  <span class="hours-list__day">Tuesday</span>
+                  <span class="hours-list__dots" aria-hidden="true"></span>
+                  <span class="hours-list__time">10:00 AM – 10:00 PM</span>
+                </li>
+
+                <li class="hours-list__item">
+                  <span class="hours-list__day">Wednesday</span>
+                  <span class="hours-list__dots" aria-hidden="true"></span>
+                  <span class="hours-list__time">10:00 AM – 10:00 PM</span>
+                </li>
+
+                <li class="hours-list__item">
+                  <span class="hours-list__day">Thursday</span>
+                  <span class="hours-list__dots" aria-hidden="true"></span>
+                  <span class="hours-list__time">10:00 AM – 10:00 PM</span>
+                </li>
+
+                <li class="hours-list__item">
+                  <span class="hours-list__day">Friday</span>
+                  <span class="hours-list__dots" aria-hidden="true"></span>
+                  <span class="hours-list__time">10:00 AM – 11:00 PM</span>
+                </li>
+
+                <li class="hours-list__item hours-list__item--highlight">
+                  <span class="hours-list__day">Saturday</span>
+                  <span class="hours-list__dots" aria-hidden="true"></span>
+                  <span class="hours-list__time">9:00 AM – 11:00 PM</span>
+                </li>
+
+                <li class="hours-list__item hours-list__item--highlight">
+                  <span class="hours-list__day">Sunday</span>
+                  <span class="hours-list__dots" aria-hidden="true"></span>
+                  <span class="hours-list__time">9:00 AM – 11:00 PM</span>
+                </li>
+
+              </ul>
+
+              <!-- Currently open indicator -->
+              <div class="hours-status">
+                <span class="hours-status__dot" aria-hidden="true"></span>
+                <span class="hours-status__text">We're open today — come on in!</span>
+              </div>
+
+            </div>
+            <!-- END info-card -->
+
           </div>
+          <!-- END Left Column -->
 
-          <!-- Address details -->
-          <address class="address-block">
-            <ul class="address-list" role="list">
 
-              <li class="address-list__item">
-                <span class="address-list__icon" aria-hidden="true">🏠</span>
-                <span>
-                  123 Main Street, Food Lane,<br />
-                  Barpeta, Assam – 781301,<br />
-                  India
-                </span>
-              </li>
+          <!-- ── Right Column: Address + Map ── -->
+          <div class="visit-us__col visit-us__col--map">
 
-              <li class="address-list__item">
-                <span class="address-list__icon" aria-hidden="true">📞</span>
-                <a href="tel:+911234567890" class="address-list__link">
-                  +91 12345 67890
-                </a>
-              </li>
+            <!-- Card wrapper -->
+            <div class="info-card">
 
-              <li class="address-list__item">
-                <span class="address-list__icon" aria-hidden="true">✉️</span>
-                <a href="mailto:hello@therestaurant.com" class="address-list__link">
-                  hello@therestaurant.com
-                </a>
-              </li>
+              <!-- Card icon + title -->
+              <div class="info-card__header">
+                <span class="info-card__icon" aria-hidden="true">📌</span>
+                <h3 class="info-card__title">Our Location</h3>
+              </div>
 
-            </ul>
-          </address>
+              <!-- Address details -->
+              <address class="address-block">
+                <ul class="address-list" role="list">
 
-          <!-- ─────────────────────────────────────────────────
+                  <li class="address-list__item">
+                    <span class="address-list__icon" aria-hidden="true">🏠</span>
+                    <span>
+                      123 Main Street, Food Lane,<br />
+                      Barpeta, Assam – 781301,<br />
+                      India
+                    </span>
+                  </li>
+
+                  <li class="address-list__item">
+                    <span class="address-list__icon" aria-hidden="true">📞</span>
+                    <a href="tel:+911234567890" class="address-list__link">
+                      +91 12345 67890
+                    </a>
+                  </li>
+
+                  <li class="address-list__item">
+                    <span class="address-list__icon" aria-hidden="true">✉️</span>
+                    <a href="mailto:hello@therestaurant.com" class="address-list__link">
+                      hello@therestaurant.com
+                    </a>
+                  </li>
+
+                </ul>
+              </address>
+
+              <!-- ─────────────────────────────────────────────────
                GOOGLE MAPS EMBED
                ─────────────────────────────────────────────────
                HOW TO REPLACE WITH YOUR REAL MAP:
@@ -488,234 +433,208 @@
                The src below uses the free Maps Embed API
                with no API key required for basic use. [web:90]
                ───────────────────────────────────────────────── -->
-          <div class="map-wrapper" role="region" aria-label="Google Maps location of The Restaurant">
-            <iframe
-              class="map-iframe"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.123456789!2d91.00000000000001!3d26.3200000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBarpeta%2C+Assam%2C+India!5e0!3m2!1sen!2sin!4v0000000000000"
-              width="100%"
-              height="260"
-              style="border: 0;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="The Restaurant location on Google Maps"
-            ></iframe>
-          </div>
+              <div class="map-wrapper" role="region" aria-label="Google Maps location of The Restaurant">
+                <iframe class="map-iframe"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.123456789!2d91.00000000000001!3d26.3200000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBarpeta%2C+Assam%2C+India!5e0!3m2!1sen!2sin!4v0000000000000"
+                  width="100%" height="260" style="border: 0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade" title="The Restaurant location on Google Maps"></iframe>
+              </div>
 
-          <!-- Directions link -->
-          <a
-            href="https://maps.google.com/?q=Barpeta,Assam,India"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-outline map-directions-btn"
-            aria-label="Get directions to The Restaurant on Google Maps (opens in new tab)"
-          >
-            🗺️ Get Directions
-          </a>
+              <!-- Directions link -->
+              <a href="https://maps.google.com/?q=Barpeta,Assam,India" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline map-directions-btn"
+                aria-label="Get directions to The Restaurant on Google Maps (opens in new tab)">
+                🗺️ Get Directions
+              </a>
+
+            </div>
+            <!-- END info-card -->
+
+          </div>
+          <!-- END Right Column -->
 
         </div>
-        <!-- END info-card -->
+        <!-- END two-column inner wrapper -->
 
       </div>
-      <!-- END Right Column -->
+    </section>
+    <!-- END VISIT US SECTION -->
 
-    </div>
-    <!-- END two-column inner wrapper -->
+  </main>
 
-  </div>
-</section>
-<!-- END VISIT US SECTION -->
-
-    </main>
-
-    <!-- ===== FOOTER ===== -->
-<!-- ================================================
+  <!-- ===== FOOTER ===== -->
+  <!-- ================================================
      SITE FOOTER
      Three-column layout: Info | Quick Links | Contact
      Dark background with light text.
      Reuse this exact block in menu.html and contact.html.
      ================================================ -->
-<footer class="site-footer" aria-labelledby="footer-heading">
+  <footer class="site-footer" aria-labelledby="footer-heading">
 
-  <!-- Hidden heading for screen readers -->
-  <h2 id="footer-heading" class="sr-only">Footer</h2>
+    <!-- Hidden heading for screen readers -->
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
 
-  <!-- ── Top area: three columns ── -->
-  <div class="footer__top">
-    <div class="container footer__grid">
+    <!-- ── Top area: three columns ── -->
+    <div class="footer__top">
+      <div class="container footer__grid">
 
-      <!-- COLUMN 1 — Restaurant Info -->
-      <div class="footer__col footer__col--brand">
+        <!-- COLUMN 1 — Restaurant Info -->
+        <div class="footer__col footer__col--brand">
 
-        <!-- Logo / Brand name -->
-        <a href="index.html" class="footer__logo" aria-label="The Restaurant — Back to homepage">
-          🍽️ The Restaurant
-        </a>
-
-        <!-- Short description -->
-        <p class="footer__brand-desc">
-          A family-owned restaurant serving fresh, delicious meals crafted
-          with quality ingredients and a whole lot of heart — since 2010.
-        </p>
-
-        <!-- Social media icons -->
-        <div class="footer__social" aria-label="Follow us on social media">
-
-          <a
-            href="https://facebook.com"
-            class="footer__social-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Follow us on Facebook"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" class="footer__social-icon">
-              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-            </svg>
+          <!-- Logo / Brand name -->
+          <a href="index.html" class="footer__logo" aria-label="The Restaurant — Back to homepage">
+            🍽️ The Restaurant
           </a>
 
-          <a
-            href="https://instagram.com"
-            class="footer__social-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Follow us on Instagram"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" class="footer__social-icon">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-              <circle cx="12" cy="12" r="4"/>
-              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-            </svg>
-          </a>
+          <!-- Short description -->
+          <p class="footer__brand-desc">
+            A family-owned restaurant serving fresh, delicious meals crafted
+            with quality ingredients and a whole lot of heart — since 2010.
+          </p>
 
-          <a
-            href="https://wa.me/911234567890"
-            class="footer__social-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Chat with us on WhatsApp"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" class="footer__social-icon">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/>
-              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535 5.856L.057 23.885a.5.5 0 0 0 .606.61l6.213-1.63A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 0 1-5.045-1.396l-.361-.214-3.735.979.998-3.648-.235-.374A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
-            </svg>
-          </a>
+          <!-- Social media icons -->
+          <div class="footer__social" aria-label="Follow us on social media">
+
+            <a href="https://facebook.com" class="footer__social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Follow us on Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                focusable="false" class="footer__social-icon">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+
+            <a href="https://instagram.com" class="footer__social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Follow us on Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"
+                class="footer__social-icon">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+            </a>
+
+            <a href="https://wa.me/911234567890" class="footer__social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Chat with us on WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                focusable="false" class="footer__social-icon">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z" />
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535 5.856L.057 23.885a.5.5 0 0 0 .606.61l6.213-1.63A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 0 1-5.045-1.396l-.361-.214-3.735.979.998-3.648-.235-.374A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
+              </svg>
+            </a>
+
+          </div>
+          <!-- END social -->
 
         </div>
-        <!-- END social -->
+        <!-- END COLUMN 1 -->
+
+
+        <!-- COLUMN 2 — Quick Links -->
+        <div class="footer__col footer__col--links">
+          <h3 class="footer__col-title">Quick Links</h3>
+          <ul class="footer__links-list" role="list">
+            <li>
+              <a href="index.html" class="footer__link">
+                <span class="footer__link-arrow" aria-hidden="true">›</span>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="menu.html" class="footer__link">
+                <span class="footer__link-arrow" aria-hidden="true">›</span>
+                Menu
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="footer__link">
+                <span class="footer__link-arrow" aria-hidden="true">›</span>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- END COLUMN 2 -->
+
+
+        <!-- COLUMN 3 — Contact Info -->
+        <div class="footer__col footer__col--contact">
+          <h3 class="footer__col-title">Get In Touch</h3>
+          <address class="footer__contact-list">
+
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon" aria-hidden="true">📞</span>
+              <a href="tel:+911234567890" class="footer__link">
+                +91 12345 67890
+              </a>
+            </div>
+
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon" aria-hidden="true">✉️</span>
+              <a href="mailto:hello@therestaurant.com" class="footer__link">
+                hello@therestaurant.com
+              </a>
+            </div>
+
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon" aria-hidden="true">📍</span>
+              <span>
+                123 Main Street, Food Lane,<br />
+                Barpeta, Assam – 781301, India
+              </span>
+            </div>
+
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon" aria-hidden="true">🕐</span>
+              <span>Open Daily: 9:00 AM – 11:00 PM</span>
+            </div>
+
+          </address>
+        </div>
+        <!-- END COLUMN 3 -->
 
       </div>
-      <!-- END COLUMN 1 -->
-
-
-      <!-- COLUMN 2 — Quick Links -->
-      <div class="footer__col footer__col--links">
-        <h3 class="footer__col-title">Quick Links</h3>
-        <ul class="footer__links-list" role="list">
-          <li>
-            <a href="index.html" class="footer__link">
-              <span class="footer__link-arrow" aria-hidden="true">›</span>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="menu.html" class="footer__link">
-              <span class="footer__link-arrow" aria-hidden="true">›</span>
-              Menu
-            </a>
-          </li>
-          <li>
-            <a href="contact.html" class="footer__link">
-              <span class="footer__link-arrow" aria-hidden="true">›</span>
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- END COLUMN 2 -->
-
-
-      <!-- COLUMN 3 — Contact Info -->
-      <div class="footer__col footer__col--contact">
-        <h3 class="footer__col-title">Get In Touch</h3>
-        <address class="footer__contact-list">
-
-          <div class="footer__contact-item">
-            <span class="footer__contact-icon" aria-hidden="true">📞</span>
-            <a href="tel:+911234567890" class="footer__link">
-              +91 12345 67890
-            </a>
-          </div>
-
-          <div class="footer__contact-item">
-            <span class="footer__contact-icon" aria-hidden="true">✉️</span>
-            <a href="mailto:hello@therestaurant.com" class="footer__link">
-              hello@therestaurant.com
-            </a>
-          </div>
-
-          <div class="footer__contact-item">
-            <span class="footer__contact-icon" aria-hidden="true">📍</span>
-            <span>
-              123 Main Street, Food Lane,<br />
-              Barpeta, Assam – 781301, India
-            </span>
-          </div>
-
-          <div class="footer__contact-item">
-            <span class="footer__contact-icon" aria-hidden="true">🕐</span>
-            <span>Open Daily: 9:00 AM – 11:00 PM</span>
-          </div>
-
-        </address>
-      </div>
-      <!-- END COLUMN 3 -->
-
+      <!-- END footer__grid -->
     </div>
-    <!-- END footer__grid -->
-  </div>
-  <!-- END footer__top -->
+    <!-- END footer__top -->
 
 
-  <!-- ── Bottom bar: divider + copyright ── -->
-  <div class="footer__bottom">
-    <div class="container footer__bottom-inner">
+    <!-- ── Bottom bar: divider + copyright ── -->
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
 
-      <!-- Copyright — year auto-updated by JS -->
-      <p class="footer__copyright">
-        &copy; <span id="footer-year"></span> The Restaurant. All rights reserved.
-      </p>
+        <!-- Copyright — year auto-updated by JS -->
+        <p class="footer__copyright">
+          &copy; <span id="footer-year"></span> The Restaurant. All rights reserved.
+        </p>
 
-      <!-- Optional policy links -->
-      <div class="footer__bottom-links">
-        <a href="#" class="footer__bottom-link">Privacy Policy</a>
-        <span class="footer__bottom-sep" aria-hidden="true">·</span>
-        <a href="#" class="footer__bottom-link">Terms of Use</a>
+        <!-- Optional policy links -->
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          <span class="footer__bottom-sep" aria-hidden="true">·</span>
+          <a href="#" class="footer__bottom-link">Terms of Use</a>
+        </div>
+
       </div>
-
     </div>
-  </div>
-  <!-- END footer__bottom -->
+    <!-- END footer__bottom -->
 
-</footer>
-<!-- END SITE FOOTER -->
- <!-- ================================================
+  </footer>
+  <!-- END SITE FOOTER -->
+  <!-- ================================================
      FLOATING WHATSAPP BUTTON
      Fixed bottom-right, visible on all pages.
      position:fixed in CSS keeps it on screen always.
      ================================================ -->
-<a
-  href="https://wa.me/911234567890?text=Hello%20I%20would%20like%20to%20place%20an%20order"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="whatsapp-float"
-  id="whatsappFloat"
-  aria-label="Chat or order on WhatsApp"
->
+  <a href="https://wa.me/911234567890?text=Hello%20I%20would%20like%20to%20place%20an%20order" target="_blank"
+    rel="noopener noreferrer" class="whatsapp-float" id="whatsappFloat" aria-label="Chat or order on WhatsApp">
 
-  <!-- WhatsApp icon -->
-  <svg class="whatsapp-float__icon" xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099
+    <!-- WhatsApp icon -->
+    <svg class="whatsapp-float__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+      aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099
       -.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223
       -.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761
       -1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446
@@ -724,25 +643,25 @@
       -.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016
       -1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2
       5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871
-      .118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/>
-    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535
+      .118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z" />
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.121 1.535
       5.856L.057 23.885a.5.5 0 0 0 .606.61l6.213-1.63A11.945 11.945
       0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805
       9.805 0 0 1-5.045-1.396l-.361-.214-3.735.979.998-3.648-.235-.374
       A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182
-      S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
-  </svg>
+      S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
+    </svg>
 
-  <!-- Tooltip label — shown on hover -->
-  <span class="whatsapp-float__label" aria-hidden="true">Order on WhatsApp</span>
+    <!-- Tooltip label — shown on hover -->
+    <span class="whatsapp-float__label" aria-hidden="true">Order on WhatsApp</span>
 
-  <!-- Notification pulse dot -->
-  <span class="whatsapp-float__pulse" aria-hidden="true"></span>
+    <!-- Notification pulse dot -->
+    <span class="whatsapp-float__pulse" aria-hidden="true"></span>
 
-</a>
+  </a>
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 
-  </body>
+</body>
 
 </html>
